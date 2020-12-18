@@ -47,7 +47,8 @@ public class CubeSpin : MonoBehaviour
             angle = angle + (Mathf.Round(angle / 90) * 90 - angle) * stopTimer / stopDuration;
         }
 
-        transform.rotation = Quaternion.Euler(angle, 0, 0);
+        //transform.rotation = Quaternion.Euler(angle, 0, 0);
+        transform.rotation = Quaternion.Euler(0, angle, 0);
 
         clicked = false;
     }
